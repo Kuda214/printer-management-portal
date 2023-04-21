@@ -1,0 +1,9 @@
+.navBarStyles{
+    background-color: #2E2F31;
+    height: 100vh;
+}
+
+.active{
+    background-color: #ffa305;
+    color: #ffa305;
+}

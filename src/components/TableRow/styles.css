@@ -1,0 +1,39 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+}
+
+td {
+    background-color: #fcfcfc85;
+    color: #000;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #00000023; ;
+  }
+
+
+  .tr{
+    text-align: left;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .switch-active {
+    background-color: lightgreen !important;
+  }
+  
+  .switch-inactive {
+    background-color: red;
+  }
+
+  .icon {
+    font-size: large;
+    margin: 0 5px;
+    color: rgb(40, 122, 255);
+  }
+
+  .icon:hover {
+    cursor: pointer;
+    font-size: x-large;
+  }

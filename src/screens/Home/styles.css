@@ -1,0 +1,53 @@
+table {
+    width: 100vw;
+    border-collapse: collapse;
+    border-radius: 8px;
+    table-layout: fixed;
+  }
+  
+  .th {
+    background-color: #cccebb85;
+    color: #000;
+    text-align: left;
+    padding: 10px;
+    border-right: 1px solid #00000037;
+  }
+
+  .round1st{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  .round2nd{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  tr{
+    text-align: left;
+  }
+
+  tr + tr {
+    margin-top: 10px;
+  }
+
+  .addDiv{
+    float: right;
+    padding: 1%;
+
+  }
+
+.button{
+    background-color: rgb(3, 130, 227); /* Green */
+    border: none;
+    margin-bottom: 1%;
+    float: right;
+    color: white;
+
+}
+
+.button:hover{
+    background-color: rgb(40, 122, 255);
+    cursor: pointer;
+    color: white;
+}

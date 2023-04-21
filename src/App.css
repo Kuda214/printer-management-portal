@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.pageHeading{
+  font-size: 2em;
+  font-weight: bold;
+  color: #000;
+  float: right;
+  margin-top: 0%;
+  margin-right: 2%;        
+}
