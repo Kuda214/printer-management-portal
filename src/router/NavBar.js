@@ -25,7 +25,7 @@ const NavBar = ({keySelected}) => {
     if(keySelected !== '' && keySelected !== null){
         return(
             <Menu theme="dark" mode="inline" defaultSelectedKeys={[selectedKey]} onSelect={handleMenuSelect} className='navBarStyles'>
-                <Menu.Item key="/home" >
+                <Menu.Item key="/" >
                     <HomeOutlined/>
                     <span>Home</span>
                 </Menu.Item>
