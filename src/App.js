@@ -28,7 +28,7 @@ function App({signOut, user}) {
       <Layout style={{ minHeight: '100vh' }}>
         <Sider trigger={null} collapsible collapsed={collapsed}>
           <div className="logo" />
-          <NavBar activeId={'1'}/>
+          <NavBar activeId={'1'} />
         </Sider>
         <Layout>
           <Header style={{ background: '#fff', padding: 0 }}>
@@ -39,7 +39,7 @@ function App({signOut, user}) {
             
           </Header>
           <Content style={{ margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280 }}>
-            <AppRoutes/>
+            <AppRoutes signOut ={signOut}/>
           </Content>
         </Layout>
       </Layout>

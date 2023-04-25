@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { HomeOutlined, UserOutlined } from '@ant-design/icons';
 
-const NavBar = ({keySelected}) => {
+const NavBar = ({keySelected, signOut}) => {
 
     const [selectedKey, setSelectedKey] = useState(keySelected);
     const navigate = useNavigate();
