@@ -6,10 +6,9 @@ import { useState, useEffect } from 'react'
 import AddModal from '../ModalScreens/AddModal';
 
 const Home = () => {
+    
     const [data, setData] = useState([]);
     const [addClicked, setAddClicked] = useState(false);
-
-
 
     useEffect(() => {
         fetch("https://mx914tztwk.execute-api.us-east-1.amazonaws.com/prod/printers", {mode: "cors"})
@@ -42,13 +41,8 @@ const Home = () => {
                         <th className="th round2nd">Actions</th>
                     </tr>
                 </thead>
-               
-                  
             </table>
-           
-            {
-                console.log(data)
-            }
+
             {
                 data.map((item,index) => {
                     return <TableRow key={index} id={item.printerId} ip={item.printerIP} status={item.printerStatus} name={item.printerName} />

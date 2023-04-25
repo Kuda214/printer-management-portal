@@ -45,3 +45,15 @@
   margin-top: 0%;
   margin-right: 2%;        
 }
+
+.mobile{
+  background-color: #d0ecf4;
+  height: 100vh;
+}
+
+.red{
+  color: #f00;
+  font-weight: bold;
+  padding: 2%;
+
+}
