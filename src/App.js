@@ -7,19 +7,23 @@ import './App.css';
 import NavBar from './router/NavBar';
 import AppRoutes from './router/AppRoutes';
 import { ArrowLeftOutlined   } from '@ant-design/icons';
+import { withAuthenticator } from '@aws-amplify/ui-react';
+
 
 const { Header, Sider, Content } = Layout;
 
 
-
-function App() {
+function App({signOut, user}) {
   const [collapsed, setCollapsed] = useState(false);
+
+  
 
   const toggleCollapsed = () => {
     setCollapsed(!collapsed);
   };
 
   return (
+
     <Router>
       <Layout style={{ minHeight: '100vh' }}>
         <Sider trigger={null} collapsible collapsed={collapsed}>
@@ -43,4 +47,4 @@ function App() {
   );
 }
 
-export default App; 
+export default withAuthenticator(App); 
